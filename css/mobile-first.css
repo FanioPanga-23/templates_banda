@@ -7,7 +7,11 @@
     transition: width 0.3s ease-in-out;
 }
 
-menu{box-shadow: 0 0 10px #00000067;}
+menu{
+    position: sticky;
+    top: 0;
+    box-shadow: 0 0 10px #0000007c;
+}
 
 menu ul{
     list-style-type: none;
@@ -54,3 +58,76 @@ menu ul li.li-flex button.iconMenu:hover{
     color: #000;
     cursor: pointer;
 }
+
+.hidden{display: none;}
+
+header{
+    height: 250px;
+    background: url(../imagens/header/la.jpg) no-repeat center top;
+    background-size: cover;
+    animation-name: banner;
+    animation-duration: 15s;
+    animation-timing-function: ease-in-out;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+}
+
+@keyframes banner {
+    33%{background-image: url(../imagens/header/la.jpg);}
+    66%{background-image: url(../imagens/header/chicago.jpg);}
+    99%{background-image: url(../imagens/header/ny.jpg);}
+}
+
+div.container{
+    display: flex;
+    flex-flow: column nowrap;
+}
+
+div.container section.section-dad{
+    display: flex;
+    padding: 10% 3%;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+section.band article.art-band{
+    text-align: justify;
+    padding: 10px;
+}
+
+.band .art-band > p{font-size: 0.9em;}
+
+.band .art-band > h2,h3{
+    text-align: center;
+    font-weight: normal;
+    margin: 12px 7px;
+    font-size: 1.7em;
+}
+
+.band .art-band > h3{
+    color: #808080;
+    font-size: 1em;
+}
+
+.band .art-band .image-section{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-content: space-between;
+    padding: 10%;
+}
+
+.band .art-band .image-section div{
+    width: 249px;
+    text-align: center;
+    font-size: 0.9em;
+    margin: 10px 0;
+}
+
+.band .art-band .image-section img{
+    display: block;
+    max-width: 100%;
+    height: auto;
+    margin-top: 8px;
+}
+
+/*Falta configurar a sessao da Banda para PC e Tablete*/
