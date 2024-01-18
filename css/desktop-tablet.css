@@ -1,5 +1,58 @@
 @charset "utf-8";
 
+/*Nas linhas asseguir escondi os links dispensaveis para PC e Tablet*/
+
+.small-menu{display: none;}
+
+menu ul li.li-flex button.iconMenu{display: none;}
+
+/*Na linha seguinte mostrei os links indispensaveis para PC e Tablets*/
+
+menu ul li.big-menu{display: block;}
 
 
-/*Aqui vou esconder o dispensavel para PC e Tablet*/
+menu ul li{
+    float: left;
+}
+
+menu ul li.end{float: right !important;}
+
+menu ul li.drop a.adrop::after{
+    content: "";
+    position: absolute;
+    margin-top: 7px;
+    margin-left: 5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: #fff transparent transparent;
+}
+
+menu ul li.drop div.drop-content{
+    display: none;
+    position: absolute;
+    background-color: #ffffff;
+    box-shadow: 2px 2px 8px #0000003a;
+    z-index: 1;
+}
+
+menu ul li.drop div.drop-content a{
+    display: block;
+    color: #000;
+}
+
+menu ul li.drop:hover div.drop-content{
+    display: block;
+}
+
+menu ul li.end span.material-icons{
+    display: block;
+    color: #fff;
+    padding: 10px 15px;
+    transition:  all 0.4s;
+}
+
+menu ul li.end span.material-icons:hover{
+    background-color: rgba(245, 34, 34, 0.918);
+    font-weight: bolder;
+    cursor: pointer;
+}

@@ -1,37 +1,26 @@
 @charset "utf-8";
 
-*{box-sizing: border-box;}
-
-body{
+*{
+    box-sizing: border-box;
     padding: 0;
     margin: 0;
+    transition: width 0.3s ease-in-out;
 }
 
-menu{
-    background-color: #000;
-    margin: 0;
-    padding: 0;
-    box-shadow: 0 0 10px #000;
-}
+menu{box-shadow: 0 0 10px #00000067;}
 
 menu ul{
     list-style-type: none;
+    background-color: #000000;
     overflow: hidden;
-    padding: 0;
-    margin: 0;
 }
-
-/*Aqui vou esconder os elementos do menu que Nn visiveis para devices moveis*/
-
-menu ul li.big-menu{display: none;}
 
 menu ul li a{
     display: inline-block;
     text-decoration: none;
     color: #fff;
-    padding: 13px 17px;
-    width: 100%;
-    transition: all 0.4s ease-in-out;
+    padding: 13px 15px;
+    transition: background-color 0.4s, color 0.3s, transform 0.3s ease-in-out;
 }
 
 menu ul li a:hover{
@@ -39,29 +28,29 @@ menu ul li a:hover{
     color: #000;
 }
 
-menu ul li.li-flex a,button{width: 25%;}
+menu ul li a:active, button.iconMenu:active{transform: scale(1, 0.9);}
+
+menu ul li a.long-link{width: 100%;}
+
+/*Links escondidos para devices moveis*/
+menu ul li.big-menu{display: none;}
+
+menu ul li.li-flex{
+    display: flex;
+    justify-content: space-between;
+}
 
 menu ul li.li-flex button.iconMenu{
-    display: inline;
-    float: right;
-    background-color: black;
-    color: #fff;
+    display: inline-block;
     border: none;
-    font-weight: bolder;
-    padding: 8px 15px;
-    transition: all 0.4s;
+    background-color: #000;
+    padding: 8px;
+    color: #fff;
+    transition: transform 0.3s;
 }
 
 menu ul li.li-flex button.iconMenu:hover{
-    background-color: lightgray;
+    background-color: #d3d3d3;
     color: #000;
     cursor: pointer;
-}
-
-menu ul li input[type="text"]{
-    background: red url(../imagens/icons/search_icon.svg) no-repeat center;
-    background-size: 35px 26px;
-    padding: 12px 10px 12px 32px;
-    width: 50px;
-    transition: width 0.4s, background-position 0.2s;
 }
