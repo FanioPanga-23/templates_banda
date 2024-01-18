@@ -62,7 +62,7 @@ menu ul li.li-flex button.iconMenu:hover{
 .hidden{display: none;}
 
 header{
-    height: 250px;
+    height: 230px;
     background: url(../imagens/header/la.jpg) no-repeat center top;
     background-size: cover;
     animation-name: banner;
@@ -131,3 +131,7 @@ section.band article.art-band{
 }
 
 /*Falta configurar a sessao da Banda para PC e Tablete*/
+
+section.tour{
+    background-color: #000;
+}
