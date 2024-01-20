@@ -119,17 +119,15 @@ header{
 .container .band .art-band .image-section{
     display: flex;
     flex-flow: row wrap;
-    justify-content: space-between;
-    align-content: center;
+    justify-content: center;
+    align-content: space-between;
     max-width: 80%;
     margin: 30px auto;
-    background-color: orangered;
 }
 
 .band .art-band .image-section .container-img{
     text-align: center;
-    width: 80%;
-    background-color: yellow;
+    margin: 20px 0;
 }
 
 .band .art-band .image-section .container-img .imgP{padding: 7px 7px 15px;}
