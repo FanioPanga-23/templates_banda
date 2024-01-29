@@ -61,6 +61,10 @@ header{
     min-height: 700px;
 }
 
+.container .section-dad{
+    padding: 6% 3%;
+}
+
 .container .band .art-band .image-section{
     flex-direction: row;
     flex-wrap: nowrap;

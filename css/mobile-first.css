@@ -87,7 +87,7 @@ header{
     flex: 100%;
     justify-content: center;
     align-content: center;
-    padding: 13% 3%;
+    padding: 15% 3%;
 }
 
 .container .band .art-band{
@@ -128,20 +128,81 @@ header{
     margin: 12px 0;
 }
 
-.container .band .art-band .image-section .container-img img{
+img{
     max-width: 100%;
     height: auto;
     display: block;
     border-radius: 3px;
 }
 
+
+/*CONFIGURAÇÃO DA ÁREA TOUR*/
+
 .container .tour{
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-content: center;
     background-color: #000;
 }
 
-.container .tour .headingTour{
+.container .tour .art-tour{
+    max-width: 800px;
+    flex: 70%;
+}
+
+.container .tour [class*="headingTour"]{
     text-align: center;
     color: #fff;
-    font-size: 1em;
+    font-size: 1.8em;
     font-weight: normal;
+    padding: 13px 0;
+}
+
+.container .tour [class*="Tour1"]{
+    font-size: 1em;
+    color: gray;
+}
+
+.container .tour .avail-tickets{
+    display: flex;
+    flex-flow: column wrap;
+    background-color: #fff;
+    margin: 20px 0;
+}
+
+.container .tour .avail-tickets .avaliable-tickets{
+    flex: 100%;
+    padding: 10px 25px 10px 13px;
+    border: 1px solid lightgray;
+    color: gray;
+    font-size: 1em;
+}
+
+.container .tour .avail-tickets .avaliable-tickets .ticket-info{
+    display: inline-block;
+    background-color: rgba(255, 41, 41, 0.829);
+    padding: 3px 8px;
+    color: #fff;
+    margin: 0 15px;
+}
+
+.container .tour .avail-tickets .avaliable-tickets [class$="fo1"]{
+    float: right;
+    color: #fff;
+    background-color: #000;
+    border-radius: 100%;
+    padding: 2px 5px;
+}
+
+.container .tour .art-tour .buy-ticket{
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-content: center;
+}
+
+.container .tour .art-tour .buy-ticket .each-buy{
+    flex: 100%;
+    background-color: 100%;
 }
