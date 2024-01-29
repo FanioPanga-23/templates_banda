@@ -91,7 +91,7 @@ header{
 }
 
 .container .band .art-band{
-    max-width: 800px;
+    max-width: 720px;
     margin: 0 auto;
     text-align: justify;
 }
@@ -129,9 +129,8 @@ header{
 }
 
 img{
-    max-width: 100%;
+    width: 100%;
     height: auto;
-    display: block;
     border-radius: 3px;
 }
 
@@ -144,12 +143,10 @@ img{
     justify-content: center;
     align-content: center;
     background-color: #000;
+    padding: 15% 4%;
 }
 
-.container .tour .art-tour{
-    max-width: 800px;
-    flex: 70%;
-}
+.container .tour .art-tour{max-width: 760px;}
 
 .container .tour [class*="headingTour"]{
     text-align: center;
@@ -168,7 +165,7 @@ img{
     display: flex;
     flex-flow: column wrap;
     background-color: #fff;
-    margin: 20px 0;
+    margin: 30px 0;
 }
 
 .container .tour .avail-tickets .avaliable-tickets{
@@ -181,7 +178,7 @@ img{
 
 .container .tour .avail-tickets .avaliable-tickets .ticket-info{
     display: inline-block;
-    background-color: rgba(255, 41, 41, 0.829);
+    background-color: rgba(255, 41, 41, 0.925);
     padding: 3px 8px;
     color: #fff;
     margin: 0 15px;
@@ -192,17 +189,48 @@ img{
     color: #fff;
     background-color: #000;
     border-radius: 100%;
-    padding: 2px 5px;
-}
-
-.container .tour .art-tour .buy-ticket{
-    display: flex;
-    flex-flow: column wrap;
-    justify-content: center;
-    align-content: center;
+    padding: 1px 5px;
 }
 
 .container .tour .art-tour .buy-ticket .each-buy{
-    flex: 100%;
-    background-color: 100%;
+    margin: 10px 0;
+    background-color: #fff;
 }
+
+.container .tour .art-tour .buy-ticket .each-buy img{border-radius: 0;}
+
+.container .tour .art-tour .buy-ticket .each-buy div{padding: 13px 8px 10px 15px;}
+
+.container .tour .art-tour .buy-ticket .each-buy [class~="content-buy"]{
+    margin: 6px 0;
+    padding: 8px 0;
+}
+
+[class$="uy1"]{font-size: 1em;}
+
+[class$="uy2"]{
+    color: gray;
+    margin: 4px 0;
+    padding: 8px 0;
+}
+
+.container .tour .art-tour .buy-ticket .each-buy button{
+    background-color: #000;
+    border: none;
+    color: #fff;
+    padding: 12px 20px;
+    cursor: pointer;
+    transition: background-color 0.4s ease-in-out;
+}
+
+.container .tour .art-tour .buy-ticket .each-buy button a{
+    text-decoration: none;
+    color: #fff;
+}
+
+.container .tour .art-tour .buy-ticket .each-buy button:hover{
+    background-color: lightgray;
+    color: #000;
+}
+
+.container .tour .art-tour .buy-ticket .each-buy button:hover a{color: #000;}

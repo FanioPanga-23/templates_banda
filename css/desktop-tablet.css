@@ -74,3 +74,14 @@ header{
 .container .band .art-band .image-section .container-img{
     max-width: 20%;
 }
+
+.container .tour .art-tour .buy-ticket{
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+}
+
+.container .tour .art-tour .buy-ticket .each-buy{
+    width: 32.5%;
+    margin: 0;
+}
