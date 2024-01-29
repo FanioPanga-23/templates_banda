@@ -52,25 +52,21 @@ menu ul li.end span.material-icons{
 }
 
 menu ul li.end span.material-icons:hover{
-    background-color: rgba(245, 34, 34, 0.918);
+    background-color: #f52222ea;
     font-weight: bolder;
     cursor: pointer;
 }
 
 header{
-    min-height: 470px;
-}
-
-.section-dad{
-    padding: 6% 7%;
+    min-height: 700px;
 }
 
 .container .band .art-band .image-section{
-    flex-flow: row nowrap;
-    justify-content: space-between;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-around;
 }
 
 .container .band .art-band .image-section .container-img{
-    margin: 0;
-    max-width: 180px;
+    max-width: 20%;
 }

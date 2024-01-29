@@ -9,7 +9,6 @@
 }
 
 menu{
-    position: sticky;
     top: 0;
     box-shadow: 0 0 10px #0000007c;
     width: 100%;
@@ -61,8 +60,6 @@ menu ul li.li-flex button.iconMenu:hover{
     color: #000;
     cursor: pointer;
 }
-
-.hidden{display: none;}
 
 header{
     height: 230px;
@@ -120,22 +117,31 @@ header{
 
 .container .band .art-band .image-section{
     display: flex;
-    flex-flow: row wrap;
+    flex-direction: column;
+    flex-wrap: wrap;
     justify-content: center;
-    align-content: space-between;
-    max-width: 80%;
-    margin: 30px auto;
+    align-content: center;
 }
 
-.band .art-band .image-section .container-img{
+.container .band .art-band .image-section .container-img{
     text-align: center;
-    margin: 20px 0;
+    margin: 12px 0;
 }
 
-.band .art-band .image-section .container-img .imgP{padding: 7px 7px 15px;}
-
-.band .art-band .image-section .container-img img{
+.container .band .art-band .image-section .container-img img{
     max-width: 100%;
     height: auto;
-    border-radius: 5px;
+    display: block;
+    border-radius: 3px;
+}
+
+.container .tour{
+    background-color: #000;
+}
+
+.container .tour .headingTour{
+    text-align: center;
+    color: #fff;
+    font-size: 1em;
+    font-weight: normal;
 }
