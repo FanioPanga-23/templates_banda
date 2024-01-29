@@ -234,3 +234,17 @@ img{
 }
 
 .container .tour .art-tour .buy-ticket .each-buy button:hover a{color: #000;}
+
+/*SECÇÃO DO MAPA*/
+
+.container section.map{
+    height: 200px;
+    background: black url(../imagens/map.jpg) no-repeat center center;
+    background-size: cover;
+}
+
+/*CONFIGURAÇÃO DO FOOTER*/
+
+footer{
+    padding: 20px;
+}
