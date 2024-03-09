@@ -9,35 +9,39 @@
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
       rel="stylesheet">
 </head>
-<body>
+<body onresize="changeWidth()">
     <menu>
         <ul>
-            <li>
-                <a href="">HOME</a>
-                <span class="material-icons just-mobile">menu</span>
+            <li class="main-link">
+                <a href="" class="home-opt">HOME</a>
+                <button class="home-opt material-icons"
+                id="btn-Menu" onclick="showHide()">
+                    menu
+                    <!--<img src="icons/menu_icon.png" alt="menu-icon">-->
+                </button>
             </li>
-            <li>
+            <li id="esc1">
                 <a href="">BAND</a>
             </li>
-            <li>
+            <li id="esc2">
                 <a href="">TOUR</a>
             </li>
-            <li>
+            <li id="esc3">
                 <a href="">CONTACT</a>
             </li>
-            <li class="dropdown">
-                <a href="" class="aDrop">MORE</a>
-                <div class="dropdown-content">
-                    <a href="" class="drop">Merchandise</a>
-                    <a href="" class="drop">Extras</a>
-                    <a href="" class="drop">Media</a>
+            <li class="drop-box desk-tab">
+                <a class="aDrop" href="">MORE</a>
+                <div class="content-drop">
+                    <a href="">Merchandise</a>
+                    <a href="">Extras</a>
+                    <a href="">Media</a>
                 </div>
             </li>
-            <li>
+            <li id="esc4">
                 <a href="" class="just-mobile">MERCH</a>
             </li>
-            <li class="pesquisa">
-                <span class="material-icons">search</span>
+            <li id="pesquisa" class="desk-tab" style="float: right;">
+                <span class="material-icons btn-search">search</span>
             </li>
         </ul>
     </menu>
@@ -50,37 +54,42 @@
     </header>
 
     <div class="container">
-        <section class="section-band">
-            <article class="content-band">
-                <h1>The Band</h1>
-                <h2>We love music</h2>
-                <p>
-                    We have created a fictional band website. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                </p>
-                <p>
-                    Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-                </p>
-                <p>
-                    Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                </p>
-                <p>
-                    Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-                </p>
+        <section class="section-band pai">
+            <article class="article-band filho">
+                <section class="content-band">
+                    <h1 id="aqui">The Band</h1>
+                    <h2>We love music</h2>
+                    <p>
+                        We have created a fictional band website. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                        Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                        Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                        Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                    </p>
+                </section>
+
+                <aside class="photograper-image">
+                    <div class="photografer-box">
+                        <p class="name-photo">Name</p>
+                        <img class="phot-img" src="imagens/band/bandmember.jpg" alt="man-holding a camera">
+                    </div>
+                    <div class="photografer-box">
+                        <p class="name-photo">Name</p>
+                        <img class="phot-img" src="imagens/band/bandmember.jpg" alt="man-holding a camera">
+                    </div>
+                    <div class="photografer-box">
+                        <p class="name-photo">Name</p>
+                        <img class="phot-img" src="imagens/band/bandmember.jpg" alt="man-holding a camera">
+                    </div>
+                </aside>
             </article>
-            <aside class="photograper-image">
-                <img src="imagens/band/bandmember.jpg" alt="man-holding a camera">
-                <img src="imagens/band/bandmember.jpg" alt="man-holding a camera">
-                <img src="imagens/band/bandmember.jpg" alt="man-holding a camera">
-            </aside>
         </section>
 
-        <section class="section-tour">
-            <article>
+        <section class="section-tour pai">
+            <article class="article-tour filho">
 
-                <div class="description-tour">
+                <section class="tour-title">
                     <h1>Tour Dates</h1>
                     <h2>Remember to book your ticket!</h2>
-                </div>
 
                 <section class="contable-tickets">
                     <div class="contable-tickets-info">
@@ -89,70 +98,103 @@
                     <div class="contable-tickets-info">
                         <p>October</p> <span class="sold-out">Sold out</span>
                     </div>
-                    <div class="contable-tickets-info">
-                        <p>November</p> <span class="left-3">3</span>
+                    <div class="contable-tickets-info last">
+                        <p>November</p> <span class="right-3">3</span>
                     </div>
                 </section>
 
                 <section class="tickets-for-sale">
                     
-                    <div>
+                    <div class="box-tickets">
                         <img src="imagens/tour/newyork.jpg" alt="New York City">
-                        <h3 class="ticket-title">New York</h3>
-                        <p class="ticket-date">Fri 27 Nov 2016</p>
-                        <p>Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
-                        <button class="buy-tickets">Buy Tickets</button>
+                        <aside class="ticket-box">
+                            <h3 class="ticket-title">New York</h3>
+                            <p class="ticket-date">Fri 27 Nov 2016</p>
+                            <p>Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
+                            <button class="buy-tickets">Buy Tickets</button>
+                        </aside>
                     </div>
                     
-                    <div>
+                    <div class="box-tickets">
                         <img src="imagens/tour/paris.jpg" alt="Paris City">
-                        <h3 class="ticket-title">Paris</h3>
-                        <p class="ticket-date">Sat 28 Nov 2016</p>
-                        <p>Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
-                        <button class="buy-tickets">Buy Tickets</button>
+                        <aside class="ticket-box">
+                            <h3 class="ticket-title">Paris</h3>
+                            <p class="ticket-date">Sat 28 Nov 2016</p>
+                            <p>Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
+                            <button class="buy-tickets">Buy Tickets</button>
+                        </aside>
                     </div>
                     
-                    <div>
+                    <div class="box-tickets">
                         <img src="imagens/tour/sanfran.jpg" alt="San Francisco City">
-                        <h3 class="ticket-title">San Francisco</h3>
-                        <p class="ticket-date">Sun 29 Nov 2016</p>
-                        <p>Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
-                        <button class="buy-tickets">Buy Tickets</button>
+                        <aside class="ticket-box">
+                            <h3 class="ticket-title">San Francisco</h3>
+                            <p class="ticket-date">Sun 29 Nov 2016</p>
+                            <p>Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
+                            <button class="buy-tickets">Buy Tickets</button>
+                        </aside>
                     </div>
                 </section>
             </article>
         </section>
 
-        <section class="section-contact">
-            <article class="article-contact">
+        <section class="section-contact pai">
+            <article class="article-contact filho">
                 
-                <section>
+                <section class="contact-title">
                     <h1>Contact</h1>
                     <h2>Fan? Drop a note!</h2>
                 </section>
 
-                <form action="">
-                    <label for="">
-                        <span class="material-icons">location</span>
-                        Chicado, US
-                    </label>
+                <form action="" id="contact-form">
+                    <section class="form-labels">
+                        <label for="" id="location">
+                            Chicado, US
+                        </label>
+                        <label for="" id="call">
+                            <img src="" alt="">
+                            Phone: +00 151515
+                        </label>
+                        <label for="imail" id="mail">
+                            <img src="" alt="">
+                            Email: mail@mail.com
+                        </label>
+                    </section>
 
-                    <label for="">
-                        <span class="material-icons">phone</span>
-                        Phone: +00 151515
-                    </label>
+                    <section class="inputs-box">
+                        <div id="twins">
+                            <input type="text" name="nome" id="inome" placeholder="Name" required>
+                            <input type="email" name="email" id="imail" required placeholder="Email">
+                        </div>
 
-                    <label for="mail">
-                        <span class="material-icons">mail</span>
-                        Email: mail@mail.com
-                    </label>
-
-                    <input type="text" name="nome" id="inome" placeholder="Name" required>
-                    <input type="email" name="email" id="imail" required placeholder="Email">
-                    <textarea name="message" id="iMessage" cols="31" rows="2"></textarea>
+                        <textarea name="message" id="iMessage" cols="31" rows="2" style="height: 48px;" placeholder="Message"></textarea>
+                        <input type="submit" value="SEND" id="submi">
+                    </section>
                 </form>
             </article>
         </section>
+
+        <section class="map-location">
+            <!--Aqui irá uma imagem como background-->
+        </section>
     </div>
+
+    <footer>
+        <section class="midd">
+            <div class="icons">
+                <span class="material-icons">facebook</span>
+                <span class="material-icons">instagram</span>
+                <span class="material-icons">snapchat</span>
+                <span class="material-icons">twitter</span>
+                <span class="material-icons"></span>
+                <span class="material-icons"></span>
+            </div>    
+            <p>Powered by <a href="https://github.com/FanioPanga-23?tab=repositories">Fânio Panga</a></p> 
+        </section>
+    </footer>
+
+    <script src="scripts/scriptspage.js">
+        
+    </script>
 </body>
 </html>
