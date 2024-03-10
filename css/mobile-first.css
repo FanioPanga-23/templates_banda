@@ -182,8 +182,12 @@ img:hover{opacity: 0.7;}
 .section-tour{
     background-color: #000;
     display: flex;
-    flex-flow: column wrap;
-    justify-content: center;
+    flex-flow: row wrap;
+}
+
+.article-tour{
+    width: 100%;
+    padding-bottom: 10%;
 }
 
 .article-tour .tour-title h1{
@@ -247,9 +251,20 @@ img:hover{opacity: 0.7;}
 
 
 /* BILHETES À VENDA */
+
+.tickets-for-sale{
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-content: center;
+    box-sizing: border-box;
+    overflow: auto;
+}
+
 .tickets-for-sale .box-tickets{
     background-color: #fff;
-    margin: 18px 0;
+    width: 100%;
+    margin: 15px 0;
 }
 
 .ticket-box{padding: 18px;}
@@ -279,6 +294,15 @@ img:hover{opacity: 0.7;}
 }
 
 /* SECTION CONTACT */
+
+.article-contact{
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    padding: 5% 0;
+}
+
+.contact-title{width: 100%;}
 
 .article-contact .contact-title h1{
     font-family: var(--font3);
@@ -351,3 +375,22 @@ textarea{margin: 8px 0 20px;}
     color: #000;
     cursor: pointer;
 }
+
+/* SECTION-MAP */
+
+#mapa:hover{opacity: 1;}
+
+footer{
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-content: center;
+}
+
+.midd, .last-link{
+    padding: 5% 0;
+    text-align: center;
+    color: #808080;
+}
+
+.last-link:hover{color: #494949;}

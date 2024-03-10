@@ -100,7 +100,7 @@ header{min-height: 580px;}
 
 /* CAIXAS DOS BILHETES À VENDA */
 .box-tickets{
-    width: 32%;
+    width: 32% !important;
 }
 
 /* MATEI AS MARGENS NAS CAIXAS DOS BILHETES À VENDA */
