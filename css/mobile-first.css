@@ -377,9 +377,9 @@ textarea{margin: 8px 0 20px;}
 }
 
 /* SECTION-MAP */
-
 #mapa:hover{opacity: 1;}
 
+/* FOOTER */
 footer{
     display: flex;
     flex-flow: row nowrap;
