@@ -3,195 +3,172 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Band</title>
-    <link rel="stylesheet" href="css/mobile-first.css" media="all">
-    <link rel="stylesheet" href="css/desktop-tablet.css" media="only screen and (min-width: 600px)">
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
-      rel="stylesheet">
+    <meta name="keywords" content="HTML, CSS, JavaScript, Band, Responsiv website, Mobile first">
+    <meta name="description" content="A responsive web page template">
+    <meta name="author" content="Fânio Panga">
+    <meta http-equiv="refresh" content="30">
+    <meta http-equiv="cache-control" content="no-cache">
+    <meta name="robts" content="index, follow">
+    <link rel="canonical" href="https://faniopanga-23.github.io/templates_banda/">
+    <meta property="og:title" content="Template Band">
+    <meta property="og:description" content="A responsive web page template. Clique aqui para saber mais..">
+    <meta property="og:url" content="https://faniopanga-23.github.io/templates_banda/">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="./style/mobile-first.css">
+    <link rel="stylesheet" href="./style/larger-screens.css" media="screen and (min-width: 600px)">
+    <link rel="shortcut icon" href="./images/favicon_io(1)/favicon-32x32.png" type="image/x-icon">
+    <title>Template Band</title>
 </head>
-<body onresize="changeWidth()">
-    <menu>
+<body onresize="show()">
+    
+    <nav>
         <ul>
-            <li class="main-link">
-                <a href="" class="home-opt">HOME</a>
-                <button class="home-opt material-icons"
-                id="btn-Menu" onclick="showHide()">
-                    menu
-                    <!--<img src="icons/menu_icon.png" alt="menu-icon">-->
-                </button>
+            <li>
+                <a href="#">HOME</a>
+                <button onclick="showHide()" class="material-icons btn-menu" style="float: right;">menu</button>
             </li>
-            <li id="esc1">
-                <a href="">BAND</a>
-            </li>
-            <li id="esc2">
-                <a href="">TOUR</a>
-            </li>
-            <li id="esc3">
-                <a href="">CONTACT</a>
-            </li>
-            <li class="drop-box desk-tab">
-                <a class="aDrop" href="">MORE</a>
-                <div class="content-drop">
-                    <a href="">Merchandise</a>
-                    <a href="">Extras</a>
-                    <a href="">Media</a>
+            <li><a href="#band" class="large-screen-link" id="bands">BAND</a></li>
+            <li><a href="#tour" class="large-screen-link" id="tours">TOUR</a></li>
+            <li><a href="#contact" class="large-screen-link" id="contacts">CONTACT</a></li>
+            <li class="li-drop large-screen-link">
+                <a class="">MORE <span class="a-special"></span></a>
+                <div class="drop-box">
+                    <a href="#" class="a-drop">Merchandise</a>
+                    <a href="#" class="a-drop">Extras</a>
+                    <a href="#" class="a-drop">Media</a>
                 </div>
             </li>
-            <li id="esc4">
-                <a href="" class="just-mobile">MERCH</a>
-            </li>
-            <li id="pesquisa" class="desk-tab" style="float: right;">
-                <span class="material-icons btn-search">search</span>
-            </li>
+            <li><a href="#" class="small-screen-link" id="merch">MERCH</a></li>
+            <li><a href="#" class="material-icons large-screen-link search" style="float: right;">search</a></li>
         </ul>
-    </menu>
+    </nav>
 
     <header>
-        <!--
-            Aqui usarei um background-image
-            Usarei 3 imagens para manipular uma animação com as mesmas
-        -->
+       <!--Preenchido por uma imgaem com a propriedade background-->
     </header>
 
-    <div class="container">
-        <section class="section-band pai">
-            <article class="article-band filho">
-                <section class="content-band">
-                    <h1 id="aqui">The Band</h1>
-                    <h2>We love music</h2>
-                    <p>
-                        We have created a fictional band website. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                        Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-                        Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                        Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-                    </p>
-                </section>
+    <main>
 
-                <aside class="photograper-image">
-                    <div class="photografer-box">
-                        <p class="name-photo">Name</p>
-                        <img class="phot-img" src="imagens/band/bandmember.jpg" alt="man-holding a camera">
+        <section class="band" id="band">
+            
+            <article class="article-son">
+                <h1 class="h-heighlight">THE BAND</h1>
+                <p class="p-heighlight"><em>We love music</em></p>
+                <p class="p-desc">
+                    We have created a fictional band website. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                </p>
+                <section class="container-photograf">
+                    <div class="photograf-item">
+                        <p class="p-name">Name</p>
+                        <img src="./images/band/bandmember.jpg" alt="bandmember" width="309" height="309">
                     </div>
-                    <div class="photografer-box">
-                        <p class="name-photo">Name</p>
-                        <img class="phot-img" src="imagens/band/bandmember.jpg" alt="man-holding a camera">
+                    <div class="photograf-item">
+                        <p class="p-name">Name</p>
+                        <img src="./images/band/bandmember.jpg" alt="bandmember" width="309" height="309">
                     </div>
-                    <div class="photografer-box">
-                        <p class="name-photo">Name</p>
-                        <img class="phot-img" src="imagens/band/bandmember.jpg" alt="man-holding a camera">
-                    </div>
-                </aside>
-            </article>
-        </section>
-
-        <section class="section-tour pai">
-            <article class="article-tour filho">
-
-                <section class="tour-title">
-                    <h1>Tour Dates</h1>
-                    <h2>Remember to book your ticket!</h2>
-
-                <section class="contable-tickets">
-                    <div class="contable-tickets-info">
-                        <p>September</p> <span class="sold-out">Sold out</span>
-                    </div>
-                    <div class="contable-tickets-info">
-                        <p>October</p> <span class="sold-out">Sold out</span>
-                    </div>
-                    <div class="contable-tickets-info last">
-                        <p>November</p> <span class="right-3">3</span>
-                    </div>
-                </section>
-
-                <section class="tickets-for-sale">
-                    
-                    <div class="box-tickets">
-                        <img src="imagens/tour/newyork.jpg" alt="New York City">
-                        <aside class="ticket-box">
-                            <h3 class="ticket-title">New York</h3>
-                            <p class="ticket-date">Fri 27 Nov 2016</p>
-                            <p>Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
-                            <button class="buy-tickets">Buy Tickets</button>
-                        </aside>
-                    </div>
-                    
-                    <div class="box-tickets">
-                        <img src="imagens/tour/paris.jpg" alt="Paris City">
-                        <aside class="ticket-box">
-                            <h3 class="ticket-title">Paris</h3>
-                            <p class="ticket-date">Sat 28 Nov 2016</p>
-                            <p>Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
-                            <button class="buy-tickets">Buy Tickets</button>
-                        </aside>
-                    </div>
-                    
-                    <div class="box-tickets">
-                        <img src="imagens/tour/sanfran.jpg" alt="San Francisco City">
-                        <aside class="ticket-box">
-                            <h3 class="ticket-title">San Francisco</h3>
-                            <p class="ticket-date">Sun 29 Nov 2016</p>
-                            <p>Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
-                            <button class="buy-tickets">Buy Tickets</button>
-                        </aside>
+                    <div class="photograf-item">
+                        <p class="p-name">Name</p>
+                        <img src="./images/band/bandmember.jpg" alt="bandmember" width="309" height="309">
                     </div>
                 </section>
             </article>
+
         </section>
 
-        <section class="section-contact pai">
-            <article class="article-contact filho">
+        <section class="tour" id="tour">
+            
+            <article class="article-son">    
+                <h1 class="h1-tour">TOUR DATES</h1>
+                <p class="p-tour"><em>Remember to book your tickets!</em></p>
                 
-                <section class="contact-title">
-                    <h1>Contact</h1>
-                    <h2>Fan? Drop a note!</h2>
+                <section class="aval-ticketes">
+                    <div class="month-ticket">September <span class="sold-out">Sold out</span></div>
+                    <div class="month-ticket">Octuber <span class="sold-out">Sold out</span></div>
+                    <div class="month-ticket">November <span class="tick-avaliable" style="float: right;">3</span></div>
                 </section>
-
-                <form action="" id="contact-form">
-                    <section class="form-labels">
-                        <label for="" id="location">
-                            Chicado, US
-                        </label>
-                        <label for="" id="call">
-                            <img src="" alt="">
-                            Phone: +00 151515
-                        </label>
-                        <label for="imail" id="mail">
-                            <img src="" alt="">
-                            Email: mail@mail.com
-                        </label>
-                    </section>
-
-                    <section class="inputs-box">
-                        <div id="twins">
-                            <input type="text" name="nome" id="inome" placeholder="Name" required>
-                            <input type="email" name="email" id="imail" required placeholder="Email">
+                
+                <section class="container-tickets">
+                    <div class="ticket-to-buy">
+                        <img class="ticket-img" src="./images/tour/newyork.jpg" alt="New York city" max-width="100%" height="auto">
+                        <div class="ticket-desc">
+                            <h3>New York</h3>
+                            <p class="p-gray">Fri 27 Nov 2016</p>
+                            <p>
+                                Prasent tincidunt sed tellus ut rutrum sed vitae justo.
+                            </p>
+                            <button class="btn-buy-ticket">Buy Tickets</button>
                         </div>
-
-                        <textarea name="message" id="iMessage" cols="31" rows="2" style="height: 48px;" placeholder="Message"></textarea>
-                        <input type="submit" value="SEND" id="submi">
-                    </section>
-                </form>
+                    </div>
+                    <div class="ticket-to-buy">
+                        <img class="ticket-img" src="./images/tour/paris.jpg" alt="Paris Eifel Tower" max-width="100%" height="auto">
+                        <div class="ticket-desc">
+                            <h3>Paris</h3>
+                            <p class="p-gray">Sat 28 Nov 2016</p>
+                            <p>
+                                Prasent tincidunt sed tellus ut rutrum sed vitae justo.
+                            </p>
+                            <button class="btn-buy-ticket">Buy Tickets</button>
+                        </div>
+                    </div>
+                    <div class="ticket-to-buy">
+                        <img class="ticket-img" src="./images/tour/sanfran.jpg" alt="San Francisco bridge" max-width="100%" height="auto">
+                        <div class="ticket-desc">
+                            <h3>San Francisco</h3>
+                            <p class="p-gray">Sun 29 Nov 2016</p>
+                            <p>
+                                Prasent tincidunt sed tellus ut rutrum sed vitae justo.
+                            </p>
+                            <button class="btn-buy-ticket">Buy Tickets</button>
+                        </div>
+                    </div>
+                </section>
             </article>
+
         </section>
 
-        <section class="map-location">
-            <!--Aqui irá uma imagem como background-->
-            <img id="mapa" src="imagens/map.jpg" alt="local">
+        <section class="contact" id="contact">
+            
+            <article class="article-son art-contact">
+                <section>
+                    <h1 class="h1-contact">CONTACT</h1>
+                    <p class="p-note-contact"><em>Fan? Drop a note!</em></p>
+                </section>
+                <section class="container-contact">
+                    <div class="contact-item">                            
+                        <p class="contact-info"><span class="material-icons icon-contact">location_on</span> Chicago, US</p>
+                        <p class="contact-info"><span class="material-icons icon-contact">phone</span> Phone: +00 151515</p>
+                        <p class="contact-info"><span class="material-icons icon-contact">mail</span> Email: mail@mail.com</p>
+                    </div>
+                    <form action="#" method="get" autocomplete="on" class="contact-item">
+                        <div class="input-name-email">
+                            <input type="text" name="usr_name" id="urs_name" required placeholder="Name" autocomplete="name">
+                            <input type="email" name="usr_email" id="usr_email" required autocomplete="email" placeholder="Email">
+                        </div>
+                        <textarea name="message" id="message" placeholder="Message" rows="1"></textarea>
+                        <input type="submit" value="SEND" style="float: right;">
+                    </form>
+                </section>
+            </article>
+
         </section>
-    </div>
+        
+        <section class="map"><img src="./images/map/map.jpg" alt="map"></section>
+
+    </main>
 
     <footer>
-        <section class="midd">
-            <div class="icons">
-                <span class="material-icons">facebook</span>
-                <span class="material-icons">snapchat</span>
-            </div>    
-            <p>Powered by <a class="last-link" href="https://github.com/FanioPanga-23?tab=repositories">Fânio Panga</a></p> 
-        </section>
+        <div class="icons">
+            <img class="footer-img" src="./images/facebook.png" alt="facebook-icon">
+            <img class="footer-img" src="./images/instagram.png" alt="instagram" height="27px">
+            <img class="footer-img" src="./images/snapchat.png" alt="snapchat-icon">
+            <img class="footer-img" src="./images/pinterest.png" alt="pinterest">
+            <img class="footer-img" src="./images/twitter-bird.png" alt="twitter-bird">
+            <img class="footer-img" src="./images/linkedin.png" alt="linkdin-icon">
+        </div>
+        <p>Powered by <a href="https://github.com/FanioPanga-23/">Fânio Panga</a></p>
     </footer>
 
-    <script src="scripts/scriptspage.js">
-        
-    </script>
+    <script src="./scripts/homeScripts.js"></script>
+
 </body>
 </html>
