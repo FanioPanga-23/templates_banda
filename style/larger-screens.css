@@ -1,0 +1,130 @@
+@charset "utf-8";
+
+/* BARRA DE NAVEGAÇÂO*/
+.small-screen-link, .btn-menu {display: none;}
+.large-screen-link {display: block;}
+
+nav ul li:not(:last-child){
+    display: block;
+    float: left;
+}
+
+nav ul li .search {
+    padding: 10px 14px;
+}
+
+nav ul li .search:hover {
+    color: #fff;
+    background-color: rgb(255, 43, 43);
+}
+
+.a-special{
+    position: relative;
+    top: 13px;
+    margin-left: 3px;
+    border: 5px solid;
+    border-color: #fff transparent transparent transparent;
+    transition: border-color .4s ease-in-out;
+}
+
+a:hover .a-special {
+    border-color: #000 transparent transparent transparent;
+}
+
+.drop-box {
+    display: none;
+    position: absolute;
+    min-width: 160px;
+    background-color: #fff;
+    box-shadow: 0 0 7px #0000002e;
+}
+
+.a-drop {
+    display: block;
+    text-decoration: none;
+    color: #000;
+    padding: 10px 14px;
+}
+
+.a-drop:hover {
+    background-color: #d4d4d4;
+}
+
+nav ul li.li-drop:hover div.drop-box {display: block;}
+nav ul li.li-drop:hover > a {
+    background-color: #d4d4d4;
+    color: #000;
+}
+
+nav ul li.li-drop:hover > a .a-special {
+    border-color: #000 transparent transparent transparent;
+}
+
+/* HEADER */
+header {
+    min-height: 500px;
+}
+
+/* PARA TODOS ARTIGOS */
+
+.article-son {
+    max-width: 785px;
+    margin: 0 auto;
+}
+
+/* BAND */
+
+.container-photograf {
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+}
+
+.container-photograf .photograf-item {
+    width: 22%;
+}
+
+/* TOUR */
+.container-tickets {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.ticket-to-buy {
+    max-width: 31.7%;
+    margin: 0;
+    justify-content: space-between;
+}
+
+/* CONTACT */
+
+.container-contact {
+    display: flex;
+    flex-flow: row wrap;
+}
+
+.contact-item {
+    flex: 50%;
+}
+
+.input-name-email {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+}
+
+input[type="text"], input[type="email"] {
+    width: calc(100% / 2.1);
+}
+
+@media screen and (width >= 1009px) {
+    header {min-height: 600px;}
+}
+
+@media screen and (width >= 1230px) {
+    header {min-height: 700px;}
+}
+
+@media screen and (width >= 1440px) {
+    header {min-height: 1000px;}
+}

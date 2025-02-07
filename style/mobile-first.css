@@ -1,0 +1,401 @@
+@charset "utf-8";
+
+:root {
+    --font1: arial, helvetica, sans-serif;
+    --font2: 'lato';
+    --font3: 'lato-light';
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: var(--font1);
+    transition: width .5s ease-in-out, height .5s ease-in-out;
+}
+
+@font-face {
+    font-family: 'lato';
+    src: url("../fontes/Lato/Lato-Regular.ttf")
+    format(truetype);
+}
+
+@font-face {
+    font-family: 'lato-light';
+    src: url("../fontes/Lato/Lato-Light.ttf")
+    format(truetype);
+}
+
+/* BARRA DE NAVEGAÇÂO */
+
+nav {
+    position: sticky;
+    top: 0;
+    box-shadow: 0 0px 7px 3px #00000032;
+    z-index: 1;
+}
+
+.large-screen-link, .small-screen-link {display: none;}
+
+nav ul {
+    list-style-type: none;
+    background-color: #000;
+    overflow: hidden;
+}
+
+nav ul li {
+    display: inline;
+}
+
+nav ul li > a {
+    display: inline-block;
+    text-decoration: none;
+    font-family: var(--font2);
+    color: #fff;
+    padding: 12px 18px;
+    transition: all .4s ease-in-out;
+}
+
+nav ul li > a:hover, nav ul li .btn-menu:hover {
+    background-color: #d4d4d4;
+    cursor: pointer;
+    color: #000;
+}
+
+.btn-menu {
+    display: inline-block;
+    border: none;
+    padding: 11.5px 18px;
+    color: #fff;
+    font-size: 1.3em;
+    background-color: #000;
+}
+
+/* HEADER */
+
+header{
+    position: relative;
+    display: block;
+    min-height: 300px;
+    background: url() no-repeat top center;
+    background-size: cover;
+    animation-name: 'baner';
+    animation-duration: 10s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    transition: height 5s ease-in-out;
+}
+
+@keyframes baner {
+    0% {
+        background-image: url("../images/header/chicago.jpg");
+    }
+    50% {
+        background-image: url("../images/header/ny.jpg");
+        src: url("../images/header/la.jpg");
+    }
+    100% {
+        background-image: url("../images/header/la.jpg");
+    }
+}
+
+/* TENTANDO ADICIONAR TEXTO NO HEADER
+header  section {
+    position: absolute;
+    bottom: 50px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+header section h1, header section p {
+    font-family: var(--font1);
+    font-weight: 100;
+    padding: 10px 0;
+    color: #fff;
+}
+
+header section p {font-family: var(--font2);}
+
+.txt2, .txt3 {opacity: 0;}
+
+.txt1 {
+    opacity: 0;
+    color: green;
+    animation-name: 'texto';
+    animation-duration: 8s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes texto {
+    0% {
+        color: green;
+    }
+    50% {
+        color: red;
+        opacity: 1;
+    }
+    100% {
+        color: yellow;
+        visibility: hidden;
+    }
+}
+*/
+
+main > section {padding: 50px 20px;}
+
+/* BAND */
+.article-son .h-heighlight {
+    padding: 20px 0 20px;
+    font-family: var(--font1);
+    font-weight: 500;
+    font-size: 1.9em;
+    text-align: center;
+}
+
+.article-son .p-heighlight {
+    padding: 0px 10px 18px;
+    font-family: var(--font2);
+    font-size: .9em;
+    color: #00000095;
+    text-align: center;
+}
+
+.article-son .p-desc {
+    letter-spacing: normal;
+    padding-bottom: 50px;
+    font-family: var(--font1);
+    text-align: justify;
+}
+
+.container-photograf {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.container-photograf .p-name {font-family: var(--font2);}
+
+.photograf-item {
+    max-width: 60%;
+    padding: 10px 0;
+    text-align: center;
+}
+
+.container-photograf .photograf-item p {padding: 18px 0;}
+
+.container-photograf .photograf-item img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    border-radius: 6px;
+}
+
+/* TOUR */
+
+section.tour {
+    background-color: #000;
+}
+
+/* TOUR DESCRIPTION */
+section.tour .h1-tour {
+    color: #fff;
+    padding: 25px 0 20px;
+    font-family: var(--font2);
+    font-weight: 500;
+    font-size: 1.9em;
+    text-align: center;
+    letter-spacing: 5px;
+}
+
+section.tour .p-tour {
+    padding-bottom: 35px;
+    font-family: var(--font1);
+    font-size: .9em;
+    text-align: center;
+    color: #959595;
+}
+
+/* TOUR AVALIABLE TICKETS TO BUY */
+.aval-ticketes {
+    background-color: red;
+}
+
+.month-ticket {
+    padding: 8px 18px;
+    font-family: var(--font2);
+    font-size: 1em;
+    color: #666666;
+    background-color: #fff;
+}
+
+.month-ticket:not(:last-child) {border-bottom: 1px solid #d4d4d4ab;}
+
+.month-ticket .sold-out {
+    display: inline-block;
+    padding: 2px 8px;
+    margin-left: 20px;
+    font-family: var(--font2);
+    color: #fff;
+    background-color: rgb(246, 62, 62);
+}
+
+.month-ticket .tick-avaliable {
+    padding: 3px 9px;
+    color: #fff;
+    background-color: #000;
+    border-radius: 50%;
+}
+
+/* TOUR TICKETS TO BUY */
+.container-tickets {
+    display: flex;
+    flex-direction: column;
+    margin: 35px 0;
+}
+
+/* ITEM */
+.ticket-to-buy {
+    margin-bottom: 20px;
+    background-color: #fff;
+}
+
+/* IMAGE */
+.ticket-img {
+    display: block;
+    width: 100%;
+}
+
+.ticket-img:hover {filter: brightness(68%);}
+
+/* TICKET DESCRIPTION */
+.ticket-desc {
+    padding: 18px;
+}
+
+.ticket-desc > h3, .ticket-desc > p {
+    padding-bottom: 16px;
+    font-family: var(--font2);
+    font-size: 1em;
+}
+
+.p-gray {color: #5a5a5a;}
+
+.btn-buy-ticket {
+    padding: 12px 18px;
+    font-family: var(--font2);
+    font-size: 1em;
+    color: #fff;
+    border: none;
+    background-color: #000;
+    transition: all .3s ease-in-out;
+}
+
+.btn-buy-ticket:hover {
+    cursor: pointer;
+    color: #000;
+    background-color: #d4d4d4;
+}
+
+/* CONTACT */
+
+/* HEADER CONTACT */
+
+.h1-contact {
+    color: #000;
+    padding: 25px 0 20px;
+    font-family: var(--font2);
+    font-weight: 500;
+    font-size: 1.9em;
+    text-align: center;
+    letter-spacing: 5px;
+}
+
+.p-note-contact {
+    text-align: center;
+    padding-bottom: 35px;
+    font-family: var(--font1);
+    font-size: .9em;
+    text-align: center;
+    color: #959595;
+}
+
+.contact-item {
+    padding: 12px 0;
+}
+
+.contact-info {
+    padding: 5px;
+    font-family: var(--font2);
+    font-size: 1.1em;
+}
+
+.contact-info .icon-contact {
+    display: inline-block;
+    position: relative;
+    margin-right: 14px;
+    top: 5px;
+}
+
+input[type="text"], input[type="email"], textarea {
+    display: block;
+    width: 100%;
+    padding: 12px;
+    font-family: var(--font2);
+    font-size: .9em;
+    border: 1px solid #ababab;
+}
+
+textarea {
+    margin-top: 10px;
+    resize: none;
+}
+
+input[type="submit"] {
+    display: block;
+    margin: 14px 0;
+    padding: 12px 20px;
+    font-family: var(--font2);
+    font-size: .9em;
+    font-weight: bold;
+    color: #fff;
+    border: none;
+    background-color: #000;
+}
+
+input[type="submit"]:hover {
+    color: #000;
+    background-color: #d4d4d4;
+    cursor: pointer;
+}
+
+/* MAP */
+
+section.map {
+    margin-top: 18px;
+    padding: 0;
+}
+
+.map img {
+    width: 100%;
+    filter: grayscale(45%);
+}
+
+footer {
+    padding: 50px;
+    text-align: center;
+    color: #8d8d8d;
+}
+
+footer > p > a {
+    color: #8d8d8d;
+}
+
+footer > div.icons {
+    padding: 20px;
+}
+
+.footer-img:hover {opacity: .6;}
