@@ -1,0 +1,3 @@
+user-agent: *
+Disallow:
+Sitemap: https://faniopanga-23.github.io/templates_banda/sitemap.xml
